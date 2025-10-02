@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "GitHub.copilot",
+        "EditorConfig.EditorConfig",
+        "phpactor.vscode-phpactor",
+        "xdebug.php-debug",
+        "recca0120.vscode-phpunit",
+        "anweber.vscode-httpyac",
+        "ms-vscode.live-server"
+    ]
+}

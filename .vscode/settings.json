@@ -1,0 +1,66 @@
+{
+    "editor.suggest.showWords": false,
+    "editor.showUnused": true,
+    "editor.rulers": [
+        120
+    ],
+    "editor.formatOnSave": false,
+    "php.validate.enable": true,
+    "php.validate.executablePath": "/usr/local/bin/php",
+    "[php]": {
+        "editor.defaultFormatter": "phpactor.vscode-phpactor"
+    },
+    "php.suggest.basic": false,
+    "phpactor.config": {
+        "php_code_sniffer.enabled": true,
+        "language_server_phpstan.enabled": true,
+        "language_server_phpstan.tmp_file_disabled": true,
+        "language_server_php_cs_fixer.enabled": true,
+        "language_server_php_cs_fixer.bin": "~/.composer/vendor/bin/php-cs-fixer",
+        "code_transform.class_new.variants": {
+            "class_strict": "class",
+            "interface_strict": "interface",
+            "enum_strict": "enum",
+            "trait_strict": "trait"
+        }
+    },
+    "git.useForcePushWithLease": true,
+    "git.allowNoVerifyCommit": true,
+    "git.commandsToLog": [
+        "push"
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "Listen Debug",
+                "type": "php",
+                "request": "launch",
+                "port": 9003
+            }
+        ]
+    },
+    "editor.minimap.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "git.blame.editorDecoration.enabled": true,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-w>": false,
+        "<C-p>": false,
+        "<C-s>": false,
+        "<C-z>": false
+    },
+    "vim.insertModeKeyBindings": [
+    ],
+    "extensions.ignoreRecommendations": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "phpunit.environment": {},
+    "dev.containers.defaultFeatures": {
+    },
+    "phpunit.args": [
+        "--configuration",
+        ".vscode/phpunit.xml"
+    ]
+}
