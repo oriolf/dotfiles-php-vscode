@@ -19,9 +19,8 @@
         "language_server_php_cs_fixer.bin": "~/.composer/vendor/bin/php-cs-fixer",
         "code_transform.class_new.variants": {
             "class_strict": "class",
-            "interface_strict": "interface",
-            "enum_strict": "enum",
-            "trait_strict": "trait"
+            "unit": "unit_test",
+            "integration": "integration_test"
         }
     },
     "git.useForcePushWithLease": true,

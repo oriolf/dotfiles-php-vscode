@@ -1,0 +1,13 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ prototype.namespace }};
+
+use Dek\Tests\Shared\Infrastructure\PhpUnit\UnitTestCase;
+
+{% for class in prototype.classes %}
+final class {{ class.name }} extends UnitTestCase
+{
+}
+{% endfor %}
