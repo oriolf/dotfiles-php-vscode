@@ -59,7 +59,5 @@
     "dev.containers.defaultFeatures": {
     },
     "phpunit.args": [
-        "--configuration",
-        ".vscode/phpunit.xml"
     ]
 }

@@ -5,7 +5,5 @@ rm -f .vscode
 ln -s "$HOME/dotfiles/.vscode"
 mkdir "$HOME/.config"
 ln -s "$HOME/dotfiles/.config/phpactor" "$HOME/.config/phpactor"
-cp phpunit.xml .vscode
-sed -i -e 's/<\/phpunit>/<coverage includeUncoveredFiles="false"><\/coverage><\/phpunit>/' .vscode/phpunit.xml
 
 composer global require friendsofphp/php-cs-fixer
