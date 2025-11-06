@@ -1,4 +1,6 @@
 {
+    "editor.fontFamily": "'JetBrains Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
     "editor.suggest.showWords": false,
     "editor.showUnused": true,
     "editor.rulers": [
