@@ -1,0 +1,35 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ prototype.namespace }};
+
+use Dek\Tests\Shared\Infrastructure\Controller\ControllerTestCase;
+
+{% for class in prototype.classes %}
+/** @group controllers */
+final class {{ class.name }} extends ControllerTestCase
+{
+    protected function path(): string
+    {
+        return '/v2/';
+    }
+
+    protected function method(): string
+    {
+        return 'POST';
+    }
+
+    protected function payload(): array
+    {
+        return [
+        ];
+    }
+
+    #[Test]
+    public function test(): void
+    {
+        parent::test();
+    }
+}
+{% endfor %}
