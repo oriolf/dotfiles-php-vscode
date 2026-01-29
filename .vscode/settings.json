@@ -18,12 +18,21 @@
         "language_server_phpstan.enabled": true,
         "language_server_phpstan.tmp_file_disabled": true,
         "language_server_php_cs_fixer.enabled": true,
+        "language_server.diagnostics_on_update": false,
+        "language_server_highlight.enabled": false,
         "language_server_php_cs_fixer.bin": "~/.composer/vendor/bin/php-cs-fixer",
         "code_transform.class_new.variants": {
             "class_strict": "class",
             "unit": "unit_test",
             "integration": "integration_test"
-        }
+        },
+        "indexer.exclude_patterns": [
+            "\/vendor\/**\/Tests\/**\/*",
+            "\/vendor\/**\/tests\/**\/*",
+            "\/vendor\/composer\/**\/*",
+            "\/vendor\/rector\/rector\/stubs-rector",
+            "\/var\/**\/*"
+        ]
     },
     "git.useForcePushWithLease": true,
     "git.allowNoVerifyCommit": true,
